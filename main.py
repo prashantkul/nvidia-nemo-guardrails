@@ -99,7 +99,7 @@ def main():
     ensure_env(args.api_key)
 
     config_path = "config"
-    config = RailsConfig.from_path("config/config_original.yml")
+    config = RailsConfig.from_path("config/config.yml")
     rails = LLMRails(config)
 
     if args.interactive:
