@@ -1,0 +1,18 @@
+models:
+  - type: main
+    engine: openai
+    model: gpt-4o-mini
+
+instructions:
+  - type: general
+    content: |
+      You are a helpful assistant that provides information about company policies.
+      - Only answer questions related to company policies (vacation, sick leave, etc.).
+      - If asked for non-policy topics, politely refuse and remind the allowed scope.
+
+colang:
+  files:
+    - rail_spec_rag.co
+
+knowledge_base:
+  folder: "kb_rag"

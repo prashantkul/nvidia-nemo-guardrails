@@ -1,0 +1,11 @@
+define user ask question
+  "What are the company policies?"
+  "How many vacation days do I have?"
+
+define flow
+  user ask question
+  $answer = execute retrieve(query=$last_user_message)
+  if $answer
+    bot $answer
+  else
+    bot "I can only answer questions about the company policies."

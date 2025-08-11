@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Environments
+.env
+.env.*
+*.env
+.venv/
+venv/
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Caches
+.mypy_cache/
+.pytest_cache/
+.cache/
+
+# IDE / Editors
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+
+# Project specific
+demo_nemo_guardrails/__pycache__/
